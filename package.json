@@ -1,0 +1,40 @@
+{
+    "name": "ponciano-login-hook",
+    "version": "1.0.10",
+    "private": false,
+    "description": "User API and hook to use with https://github.com/romponciano/login-service",
+    "author": "Rômulo Ponciano (romponciano@gmail.com)",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "files": ["lib"],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/romponciano/react-login-service.git"
+    },
+    "scripts": {
+        "build": "SET NODE_ENV=production && babel src --out-dir dist --copy-files",
+        "build:esm": "tsc --build",
+        "build:cjs": "tsc --module commonjs --outDir lib/cjs",
+        "build:tsc": "tsc"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/romponciano/react-login-service/issues"
+    },
+    "dependencies": {
+        "core-js": "^3.16.3",
+        "js-sha256": "^0.9.0",
+        "react": "^17.0.2"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.14.8",
+        "@babel/core": "^7.15.0",
+        "@babel/preset-env": "^7.15.0",
+        "@babel/preset-react": "^7.13.13",
+        "@babel/preset-typescript": "^7.13.0",
+        "@types/react": "^17.0.9",
+        "babel-loader": "^8.2.2",
+        "ts-loader": "^9.1.2",
+        "typescript": "^4.2.4"
+    }
+}
