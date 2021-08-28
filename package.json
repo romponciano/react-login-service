@@ -1,6 +1,6 @@
 {
     "name": "ponciano-login-hook",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "private": false,
     "description": "User API and hook to use with https://github.com/romponciano/login-service",
     "author": "Rômulo Ponciano (romponciano@gmail.com)",

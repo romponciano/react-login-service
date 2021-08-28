@@ -71,8 +71,8 @@ class UserAPI {
                 headers: this.DEFAULT_HEADER,
                 body: JSON.stringify({
                     username: username,
-                    password: password,
-                    newPassword: newPassword
+                    password: sha256(password),
+                    newPassword: sha256(newPassword)
                 })
             })
         )
@@ -92,7 +92,7 @@ class UserAPI {
                 headers: this.DEFAULT_HEADER,
                 body: JSON.stringify({
                     username: username,
-                    password: password,
+                    password: sha256(password),
                     newUsername: newUsername
                 })
             })
